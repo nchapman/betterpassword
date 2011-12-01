@@ -51,3 +51,32 @@ dd {
   padding-top: 1em;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
+
+.copy{
+	
+	background-color: #000;
+  color: #fff;
+  /*display: block;*/
+	margin-left: 10px;
+	margin-bottom: -20px;
+	margin-top: -10px;
+  font: 11px verdana;
+  opacity: .15;
+  padding: 1em;
+  text-decoration: none;
+  -moz-border-radius-bottomleft: .5em;
+  -webkit-border-bottom-left-radius: .5em;
+  -moz-border-radius-bottomright: .5em;
+  -webkit-border-bottom-right-radius: .5em;
+
+	-moz-border-radius-topleft: .5em;
+  -webkit-border-top-left-radius: .5em;
+  -moz-border-radius-topright: .5em;
+  -webkit-border-top-right-radius: .5em;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+}
+
+.hover{
+	background-color: #E7E097;
+	color: black;
+}

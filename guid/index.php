@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.0.0/build/cssreset/reset-min.css&3.0.0/build/cssfonts/fonts-min.css&3.0.0/build/cssbase/base-context-min.css" />
     <link rel="stylesheet" href="/stylesheets/screen.css">
+		
+		
   </head>
   <body>
     <h1>Better GUID</h1>

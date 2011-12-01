@@ -5,6 +5,29 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.0.0/build/cssreset/reset-min.css&3.0.0/build/cssfonts/fonts-min.css&3.0.0/build/cssbase/base-context-min.css" />
     <link rel="stylesheet" href="/stylesheets/screen.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/jquery.zclip.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('a#copy-good').zclip({
+				path:'/javascripts/ZeroClipboard.swf',
+				copy: $('dt#good').text()
+			});
+			
+			$('a#copy-better').zclip({
+				path:'/javascripts/ZeroClipboard.swf',
+				copy:$('dt#better').text()
+			});
+			
+			$('a#copy-mobetta').zclip({
+				path:'/javascripts/ZeroClipboard.swf',
+				copy:$('dt#mobetta').text()
+			});
+
+		});
+		</script>
+		
   </head>
   <body>
     <h1>Better Password</h1>
@@ -32,11 +55,11 @@
     ?>
     <div id="password">
       <dl>
-        <dt><? echo generate(8) ?></dt>
+        <dt id='good'><? echo generate(8) ?><a href="#" id="copy-good" class="copy">copy</a></dt>
         <dd>good</dd>
-        <dt><? echo generate(12) ?></dt>
+        <dt id="better"><? echo generate(12) ?><a href="#" id='copy-better' class="copy">copy</a></dt>
         <dd>better</dd>
-        <dt><? echo generate(16, true) ?></dt>
+        <dt id="mobetta"><? echo generate(16, true) ?><a href="#" id='copy-mobetta' class="copy">copy</a></dt>
         <dd>mo betta</dd>
       </dl>
     </div>
