@@ -12,7 +12,7 @@
 		$(document).ready(function(){
 			$('a#copy-good').zclip({
 				path:'/javascripts/ZeroClipboard.swf',
-				copy: $('dt#good').text()
+				copy:$('dt#good').text()
 			});
 			
 			$('a#copy-better').zclip({
@@ -55,11 +55,11 @@
     ?>
     <div id="password">
       <dl>
-        <dt id='good'><? echo generate(8) ?><a href="#" id="copy-good" class="copy">copy</a></dt>
+        <dt id='good'><? echo generate(8) ?></dt><a href="#" id="copy-good" class="copy">copy</a>
         <dd>good</dd>
-        <dt id="better"><? echo generate(12) ?><a href="#" id='copy-better' class="copy">copy</a></dt>
+        <dt id="better"><? echo generate(12) ?></dt><a href="#" id='copy-better' class="copy">copy</a>
         <dd>better</dd>
-        <dt id="mobetta"><? echo generate(16, true) ?><a href="#" id='copy-mobetta' class="copy">copy</a></dt>
+        <dt id="mobetta"><? echo generate(16, true) ?></dt><a href="#" id='copy-mobetta' class="copy">copy</a>
         <dd>mo betta</dd>
       </dl>
     </div>

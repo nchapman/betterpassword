@@ -23,6 +23,7 @@ dd {
   font-size: 16px;
   font-weight: bold;
   opacity: .3;
+	margin-top: 5px;
 }
 
 #creator {
@@ -57,9 +58,11 @@ dd {
 	background-color: #000;
   color: #fff;
   /*display: block;*/
-	margin-left: 10px;
-	margin-bottom: -20px;
-	margin-top: -10px;
+	/*margin-left: 10px;
+		margin-bottom: -20px;
+		*/
+
+	margin-bottom: 10px;
   font: 11px verdana;
   opacity: .15;
   padding: 1em;
@@ -79,4 +82,5 @@ dd {
 .hover{
 	background-color: #E7E097;
 	color: black;
+	opacity: .5;
 }
